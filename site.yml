@@ -1,7 +1,19 @@
 ---
+
+- hosts: all
+  ansible_user: root
+  vars_prompt:
+    - name: "user_password"    
+      prompt: "Enter a password for the newly created user"    
+      private: yes    
+      encrypt: "md5_crypt" # needs to have python-passlib installed on local machine before we can use it    
+      confirm: yes    
+      salt_size: 7
+  roles:
+    - ansible-adduser
+    
  - hosts: all
    roles:
-    - ansible-adduser
     - ansible-apt
     - ansible-ssh
     - ansible-ssh-server
