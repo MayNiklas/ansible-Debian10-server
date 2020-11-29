@@ -1,0 +1,9 @@
+---
+ - hosts: all
+   roles:
+    - ansible-ssh
+    - ansible-ssh-server
+    - ansible-git
+    - ansible-hostname
+    - ansible-ufw
+    - ansible-docker
