@@ -1,3 +1,8 @@
 ---
+# GitHub user is used for pulling ssh keys! Can be different from git_name
+user_name: nik
+github_user: MayNiklas
+sudo_without_pw: false
+
 git_name: "MayNiklas"
 git_mail: "user@example.com"
