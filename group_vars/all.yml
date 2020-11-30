@@ -1,4 +1,6 @@
 ---
+# Login user is used for creating user account
+login_user: root
 # GitHub user is used for pulling ssh keys! Can be different from git_name
 user_name: nik
 github_user: MayNiklas
