@@ -22,3 +22,6 @@
 - src: 'https://github.com/MayNiklas/ansible-docker.git'
   name: ansible-docker
   scm: git
+- src: 'https://github.com/MayNiklas/ansible-docker-collection.git'
+  name: ansible-docker-collection
+  scm: git
