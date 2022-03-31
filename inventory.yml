@@ -1,8 +1,0 @@
----
-all:
-  hosts:
-    server-01:
-    server-02:
-    server-03:
- 
-     

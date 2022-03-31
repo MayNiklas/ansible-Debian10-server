@@ -15,9 +15,25 @@
 - hosts: all
   roles:
     - ansible-apt
-    - ansible-ssh
     - ansible-ssh-server
     - ansible-git
     - ansible-hostname
-    - ansible-ufw
-    - ansible-docker
+    # - ansible-ufw
+    # - ansible-docker
+
+- hosts: k3s_cluster
+  gather_facts: yes
+  become: yes
+  roles:
+    - ansible-k3s/common
+
+- hosts: master
+  become: yes
+  roles:
+    - ansible-k3s/master
+
+- hosts: node
+  become: yes
+  roles:
+    - ansible-k3s/node
+

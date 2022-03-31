@@ -1,3 +1,0 @@
----
-hostname: server-03
-ansible_host: 192.168.1.4

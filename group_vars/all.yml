@@ -3,6 +3,7 @@
 login_user: root
 # GitHub user is used for pulling ssh keys! Can be different from git_name
 user_name: nik
+ansible_user: nik
 github_user: MayNiklas
 sudo_without_pw: false
 
